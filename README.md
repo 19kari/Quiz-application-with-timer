@@ -102,13 +102,12 @@ public class QuizQuestion {
 }
 
 //Create separate Class for QuizApp
-public class QuizApp {
-    public static void main(String[] args) {
-        QuizQuestion[] questions = new QuizQuestion[]{
-            new QuizQuestion("What is the capital of France?", new String[]{"Berlin", "Madrid", "Paris", "Rome"}, 2),
-            new QuizQuestion("What is 2 + 2?", new String[]{"3", "4", "5", "6"}, 1),
-            new QuizQuestion("What is the color of the sky?", new String[]{"Green", "Blue", "Red", "Yellow"}, 1)
-        };
+public class QuizApp{ public static void main(String[] args) { QuizQuestion[] questions = new QuizQuestion[]{
+new QuizQuestion("What is the capital of France?", 
+new String[]{"Berlin", "Madrid", "Paris", "Rome"}, 2),
+new QuizQuestion("What is 2 + 2?", new String[]{"3", "4", "5", "6"}, 1),
+new QuizQuestion("What is the color of the sky?", new String[]{"Green", "Blue", "Red", "Yellow"}, 1)
+};
 
         QuizGame game = new QuizGame(questions);
         game.startQuiz();
