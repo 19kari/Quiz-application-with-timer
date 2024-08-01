@@ -1,4 +1,8 @@
 # Quiz-application-with-timerCreate separate Class for QuizGame
+
+
+
+
 import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
